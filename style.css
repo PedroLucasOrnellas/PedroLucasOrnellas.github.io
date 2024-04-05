@@ -47,6 +47,7 @@ table {
 
 body{
     background-color: #353535;
+    height: 100%;
 }
 .navegador{
     background-color: rgba(0, 0, 0, 0.185);
@@ -114,4 +115,26 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 15px;
+}
+
+.rodape{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.185);
+    max-width: 1320px;
+    padding: 15px;
+    margin: 40px auto;
+    border: solid 1px rgb(155, 166, 185);
+    border-radius: 10px;
+}
+.rodape ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    gap: 70px;
+}
+.rodape ul a{
+    color: white ;
 }
