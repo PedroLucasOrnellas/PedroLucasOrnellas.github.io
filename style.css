@@ -1,0 +1,117 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-color: #353535;
+}
+.navegador{
+    background-color: rgba(0, 0, 0, 0.185);
+    max-width: 750px;
+    padding: 15px;
+    margin: 40px auto;
+    border: solid 1px rgb(155, 166, 185);
+    border-radius: 10px;
+}
+.navegador ul{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    gap: 70px;
+    flex-direction: row;
+    
+}
+.navegador ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d8d8d8 ;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.selecionado{
+    color: #ffffff !important;
+}
+.navegador ul li a:hover{
+    color: #ffffff !important;
+}
+
+.principal{
+    display: block;
+    background-color: rgb(68, 68, 68);
+    width: 65%;
+    padding: 50px;
+    margin: auto;
+    border-radius:10px;
+}
+
+.linha{
+    display: flex;
+}
+
+.apresentacao p{
+    display: block;
+    width: 80%;
+    margin: 50px;
+    color: white;
+    line-height: 25px;
+}
+.apresentacao h1{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 35px;
+}
+
+.conteudo img{
+    margin: 50px 75px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
