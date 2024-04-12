@@ -1,140 +1,226 @@
-/* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1.5;
+    font-family: "Poppins", sans-serif;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-body{
-    background-color: #353535;
-    height: 100%;
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
 }
-.navegador{
-    background-color: rgba(0, 0, 0, 0.185);
-    max-width: 750px;
-    padding: 15px;
-    margin: 40px auto;
-    border: solid 1px rgb(155, 166, 185);
-    border-radius: 10px;
-}
-.navegador ul{
+
+.telaInicial{
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    width: 70%;
-    min-width: 300px;
-    margin: auto;
-    gap: 70px;
-    flex-direction: row;
-    
-}
-.navegador ul li a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #d8d8d8 ;
-    font-size: 16px;
-    text-transform: uppercase;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    height: 100vh;
+    width: 100%;
+    color: #bdbdbd;
+    text-align: center;
     font-weight: bold;
-    letter-spacing: 1px;
+}
+
+.titulo h1{
+    color: #fff;
+    font-size: 80px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15xpx;
+}
+.navbar ul li{
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    color: #fff;
 }
 .selecionado{
-    color: #ffffff !important;
-}
-.navegador ul li a:hover{
-    color: #ffffff !important;
-}
-
-.principal{
-    display: block;
-    background-color: rgb(68, 68, 68);
-    width: 65%;
-    padding: 50px;
-    margin: auto;
-    border-radius:10px;
+    color: #fff;
+    border-radius: 30px;
+    border: solid #dfdfdf 2px;
 }
 
-.linha{
-    display: flex;
-}
 
-.apresentacao p{
-    display: block;
-    width: 80%;
-    margin: 50px;
-    color: white;
-    line-height: 25px;
-}
-.apresentacao h1{
-    font-size: 30px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 20px 35px;
-}
-
-.conteudo img{
-    margin: 50px 75px;
-    height: 250px;
-    width: 250px;
-    border-radius: 15px;
-}
-
-.rodape{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.185);
-    max-width: 1320px;
-    padding: 15px;
-    margin: 40px auto;
-    border: solid 1px rgb(155, 166, 185);
-    border-radius: 10px;
-}
-.rodape ul{
+.conteudoPrincipal{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    min-width: 300px;
-    margin: auto;
-    gap: 70px;
+    gap: 25px;
+    padding: 40px;
+    color: rgb(51, 51, 51);
 }
-.rodape ul a{
-    color: white ;
+
+
+.principalEsquerdo h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.principalEsquerdo h3{
+    font-size: 22px;
+    margin: 0;
+
+}
+.principalEsquerdo img{
+    background-image: url("/images/pic07.jpg");
+    width: 100%;
+    margin: 40px 0;
+}
+.principalEsquerdo p{
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+
+.principalDireito{
+    padding: 20px;
+
+}
+
+.tituloDireita{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 65px;
+}
+.info{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #a0a0a0;
+    margin: 25px 0;
+}
+.box{
+    padding-bottom: 40px;
+    border-bottom: solid 1px #c7c7c7;
+}
+.box img{
+    display: block;
+    width: 75px;
+    height: 75px;
+}
+
+.boxConteudo p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 1.7rem;
+}
+.outrosConteudos{
+    background-color: rgb(241, 241, 241);
+    padding: 20px  20px 100px 20px;
+}
+.bigBox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #505050;
+}
+.bigBox p{
+    font-size: 14px;
+    color:  #696969;
+    font-weight: bold;
+}
+.bigBox button{
+    width:160px;
+    height: 55px;
+    background-color: rgb(247, 99, 46);
+    border: none;
+    color: rgb(241, 241, 241);
+    border-radius: 50px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(29, 29, 29);
+    padding: 70px 20px;
+}
+.boxRodape{
+    padding: 20px;
+    width: 33%;
+}
+.titleBoxRodape{
+    display: block;
+    color: #eeeeee;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.boxRodape ul li{
+    color: #8d8c8c;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.boxRodape ul li:hover{
+    color: #c2c2c2;
+}
+.linha{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #696969;
+    margin: 10px 0;
 }
